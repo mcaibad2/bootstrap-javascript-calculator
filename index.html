@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Freecodecamp - Wikipedia</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var result = 0;
+        var input = 0;
+        var operation = "";
+        $(document).ready(function () {
+            $("#clearButton").click(function () {
+                input = 0;
+                $("#screen").text(input);
+            });
+            $("#oneButton").click(function(){
+                input = 1;
+                $("#screen").text(input);
+            });
+            $("#twoButton").click(function(){
+                input = 2;
+                $("#screen").text(input);
+            });
+            $("#threeButton").click(function(){
+                input = 3;
+                $("#screen").text(input);
+            });
+            $("#fourButton").click(function(){
+                input = 4;
+                $("#screen").text(input);
+            });
+            $("#fiveButton").click(function(){
+                input = 5;
+                $("#screen").text(input);
+            });
+            $("#sixButton").click(function(){
+                input = 6;
+                $("#screen").text(input);
+            });
+            $("#sevenButton").click(function(){
+                input = 7;
+                $("#screen").text(input);
+            });
+            $("#eightButton").click(function(){
+                input = 8;
+                $("#screen").text(input);
+            });
+            $("#nineButton").click(function(){
+                input = 9;
+                $("#screen").text(input);
+            });
+            $("#zeroButton").click(function(){
+                input = 0;
+                $("#screen").text(input);
+            });
+            // operations
+            $("#additionButton").click(function(){
+                result += result + input;
+            });
+            $("#equalsButton").click(function(){
+                $("#screen").text(result);
+                result = 0;
+            });
+        });
+    </script>
+    <style>
+        .btn {
+            width: 100%;
+            font-size: 30px;
+        }
+        .row {
+            margin-top: 20px;
+        }
+        .well {
+            text-align: right;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<div class="container">
+    <h2>Javascript calculator</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well" id="screen">0</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="sevenButton">7</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="eightButton">8</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="nineButton">9</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" id="divisionButton">÷</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="fourButton">4</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="fiveButton">5</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="sixButton">6</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" id="multiplyButton">×</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="oneButton">1</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="twoButton">2</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="threeButton">3</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" id="minusButton">−</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="zeroButton">0</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-default" id="decimalMarkButton">.</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-primary" id="additionButton">+</button>
+        </div>
+        <div class="col-md-3">
+            <button type="button" class="btn btn-success" id="equalsButton">=</button>
+        </div>
+    </div>
+</div>
